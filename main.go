@@ -14,8 +14,8 @@ func main() {
 	http.HandleFunc("/set", setUsernameHandler)
 	http.HandleFunc("/get", getUsernameHandler)
 
-	log.Println("Starting server on :8080")
-	if err := http.ListenAndServe(":8080", nil); err != nil {
+	log.Println("Starting server on :80")
+	if err := http.ListenAndServe(":80", nil); err != nil {
 		log.Fatalf("Could not start server: %s\n", err.Error())
 	}
 }
